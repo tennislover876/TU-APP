@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/boardred"
+    android:orientation="vertical"
+
+    tools:context="com.example.oshane.tuconnect.Chat">
+
+    <TextView
+        android:id="@+id/textViewID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text=""
+        android:textStyle="bold|italic"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textViewID"
+        android:layout_above="@+id/linearLayout2">
+
+        <ListView
+            android:id="@+id/viewMessageID"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="0dp"
+            android:paddingBottom="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/waterchatbox"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp">
+
+
+        <EditText
+            android:id="@+id/chatBoxID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/msgListView"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp"
+            android:layout_alignTop="@+id/button1"
+            android:layout_toLeftOf="@+id/sendMessageButton"
+            android:layout_weight="0.72"
+            android:ems="10"
+            android:maxHeight="80dp"
+             />
+
+        <ImageButton
+            android:id="@+id/sendMessageButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/msgListView"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/watersend"
+            android:onClick="toSendChat"
+            android:text="SEND"  />
+    </LinearLayout>
+
+
+</RelativeLayout>

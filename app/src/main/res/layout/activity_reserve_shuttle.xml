@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/boardred"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/seatsRemainingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:text="Weekend Reservations"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:textColor="#ffe766"/>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_below="@+id/seatsRemainingTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+
+        <ListView
+            android:id="@+id/fadeList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"
+            android:alpha="0"
+            android:visibility="gone"
+            android:dividerHeight="1dp"
+            android:divider="#000000"/>
+
+        <EditText
+            android:id="@+id/editTextUploadID"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:alpha="0"
+            android:hint="Enter Name Here"
+            android:visibility="gone"
+            android:translationY="-2500dp"
+             />
+
+
+        <Button
+            android:id="@+id/enterUploadID"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:alpha="0"
+            android:background="@drawable/roundedrectangle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:onClick="toUpload"
+            android:text="Reserve Seat"
+            android:visibility="gone"
+            android:translationY="-2500dp"
+            android:textStyle="bold|italic"
+            android:textSize="20sp"
+            android:textColor="#ffe34c"
+            />
+
+
+        <Button
+            android:id="@+id/noClearButtonID"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/roundedrectangle"
+            android:text="NO"
+            android:visibility="gone"
+            android:textStyle="bold|italic"
+            android:textSize="20sp"
+            android:textColor="#ffe34c"/>
+
+        <Button
+            android:id="@+id/yesClearButtonID"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/roundedrectangle"
+            android:text="Yes, Confirm!"
+            android:visibility="gone"
+            android:textStyle="bold|italic"
+            android:textSize="20sp"
+            android:textColor="#ffe34c"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2">
+
+
+
+        <Button
+            android:id="@+id/driverID"
+            android:background="@drawable/roundedrectangle"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3dp"
+            android:onClick="toDriverView"
+            android:text="Driver"
+            android:textStyle="bold|italic"
+            android:textSize="20sp"
+            android:textColor="#ffe34c"/>
+
+        <Button
+            android:id="@+id/riderID"
+            android:background="@drawable/roundedrectangle"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3dp"
+            android:onClick="toStudentView"
+            android:text="STUDENT"
+            android:textStyle="bold|italic"
+            android:textSize="20sp"
+            android:textColor="#ffe34c"/>
+
+
+        <Button
+            android:id="@+id/menuID"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/roundedrectangle"
+            android:onClick="toMenu"
+            android:text="Menu"
+            android:textStyle="bold|italic"
+            android:textSize="20sp"
+            android:textColor="#ffe34c"/>
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/clearButtonID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:alpha="0"
+        android:text="Clear List"
+        android:translationY="-2500dp"
+        android:visibility="gone"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:textColor="#ffe34c"/>
+
+
+</RelativeLayout>
+
+
+

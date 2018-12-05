@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/boardred"
+
+    tools:context="com.example.oshane.tuconnect.Buildings">
+
+    <TextView
+        android:id="@+id/textViewID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:textColor="#ffe766"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_below="@+id/textViewID">
+
+
+        <ListView
+            android:id="@+id/hoo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="1dp"
+            android:divider="#000000"
+            android:layout_margin="5dp"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <Button
+            android:id="@+id/menuID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundedrectangle"
+            android:onClick="toMenu"
+            android:text="Menu"
+            android:textStyle="bold|italic"
+            android:textSize="20sp"
+            android:textColor="#ffe34c"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
